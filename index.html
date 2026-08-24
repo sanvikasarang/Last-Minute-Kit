@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JUST IN CASE | Smart Kit Generator</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+
+<body>
+
+    <!-- Decorative background -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+    <div class="background-shape shape-three"></div>
+
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                J
+            </div>
+
+            <div>
+                <h1>JUST IN CASE</h1>
+
+                <p>
+                    Last-minute kit generator
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="header-badge">
+            PYTHON POWERED
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="tag">
+                    QUICK • SIMPLE • PRACTICAL
+                </span>
+
+
+                <h2>
+                    Leaving in a hurry?
+                    <br>
+                    <strong>Don't forget the essentials.</strong>
+                </h2>
+
+
+                <p class="hero-description">
+                    A Python-powered last-minute kit generator
+                    that creates a practical checklist based on
+                    your situation, duration and weather.
+                </p>
+
+
+                <div class="hero-pills">
+
+                    <span>
+                        Smart Checklist
+                    </span>
+
+                    <span>
+                        No JavaScript
+                    </span>
+
+                    <span>
+                        Python Logic
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HERO GRAPHIC -->
+            <div class="hero-visual">
+
+                <div class="visual-circle">
+
+                    <div class="bag-icon">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-top">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Essentials
+                        </strong>
+
+                        <small>
+                            Ready to check
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-bottom">
+
+                    <span>
+                        +
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Personalised
+                        </strong>
+
+                        <small>
+                            Based on your choices
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- GENERATOR -->
+        <section class="generator-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="small-heading">
+                        STEP 01
+                    </span>
+
+                    <h2>
+                        Build your kit
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Tell us where you're going,
+                    how long you'll be there,
+                    and what the weather looks like.
+                </p>
+
+            </div>
+
+
+
+            <!-- FORM -->
+            <form method="POST"
+                  class="generator-form">
+
+
+                <div class="form-grid">
+
+
+                    <!-- SITUATION -->
+                    <div class="form-group">
+
+                        <label for="category">
+
+                            <span class="label-number">
+                                01
+                            </span>
+
+                            Situation
+
+                        </label>
+
+
+                        <select
+                            name="category"
+                            id="category"
+                            required
+                        >
+
+                            <option value="">
+                                Select situation
+                            </option>
+
+
+                            <option
+                                value="Travel"
+                                {% if category == "Travel" %}selected{% endif %}
+                            >
+                                Travel
+                            </option>
+
+
+                            <option
+                                value="College"
+                                {% if category == "College" %}selected{% endif %}
+                            >
+                                College
+                            </option>
+
+
+                            <option
+                                value="Work"
+                                {% if category == "Work" %}selected{% endif %}
+                            >
+                                Work
+                            </option>
+
+
+                            <option
+                                value="Gym"
+                                {% if category == "Gym" %}selected{% endif %}
+                            >
+                                Gym
+                            </option>
+
+
+                            <option
+                                value="Emergency"
+                                {% if category == "Emergency" %}selected{% endif %}
+                            >
+                                Emergency
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- DURATION -->
+                    <div class="form-group">
+
+                        <label for="duration">
+
+                            <span class="label-number">
+                                02
+                            </span>
+
+                            Duration
+
+                        </label>
+
+
+                        <select
+                            name="duration"
+                            id="duration"
+                            required
+                        >
+
+                            <option value="">
+                                Select duration
+                            </option>
+
+
+                            <option
+                                value="Short"
+                                {% if duration == "Short" %}selected{% endif %}
+                            >
+                                Short / Few Hours
+                            </option>
+
+
+                            <option
+                                value="Medium"
+                                {% if duration == "Medium" %}selected{% endif %}
+                            >
+                                Medium / 1–2 Days
+                            </option>
+
+
+                            <option
+                                value="Long"
+                                {% if duration == "Long" %}selected{% endif %}
+                            >
+                                Long / 3+ Days
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- WEATHER -->
+                    <div class="form-group">
+
+                        <label for="weather">
+
+                            <span class="label-number">
+                                03
+                            </span>
+
+                            Weather
+
+                        </label>
+
+
+                        <select
+                            name="weather"
+                            id="weather"
+                            required
+                        >
+
+                            <option value="">
+                                Select weather
+                            </option>
+
+
+                            <option
+                                value="Normal"
+                                {% if weather == "Normal" %}selected{% endif %}
+                            >
+                                Normal
+                            </option>
+
+
+                            <option
+                                value="Rainy"
+                                {% if weather == "Rainy" %}selected{% endif %}
+                            >
+                                Rainy
+                            </option>
+
+
+                            <option
+                                value="Hot"
+                                {% if weather == "Hot" %}selected{% endif %}
+                            >
+                                Hot
+                            </option>
+
+
+                            <option
+                                value="Cold"
+                                {% if weather == "Cold" %}selected{% endif %}
+                            >
+                                Cold
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GENERATE -->
+                <button
+                    type="submit"
+                    class="generate-button"
+                >
+
+                    <span>
+                        Generate My Kit
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- GENERATED KIT -->
+        {% if submitted %}
+
+        <section class="result-section">
+
+
+            <div class="result-top-line">
+
+                <div class="result-title">
+
+                    <span class="small-heading">
+                        STEP 02 • GENERATED
+                    </span>
+
+                    <h2>
+                        Your ready-to-go checklist
+                    </h2>
+
+                    <p>
+                        Here's what Python recommends for you.
+                    </p>
+
+                </div>
+
+
+                <div class="item-count">
+
+                    <strong>
+                        {{ kit|length }}
+                    </strong>
+
+                    <span>
+                        items
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SUMMARY -->
+            <div class="summary">
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        ◇
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Situation
+                        </small>
+
+                        <strong>
+                            {{ category }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        ◷
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Duration
+                        </small>
+
+                        <strong>
+                            {{ duration }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span class="summary-icon">
+                        ○
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Weather
+                        </small>
+
+                        <strong>
+                            {{ weather }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CHECKLIST -->
+            <div class="checklist">
+
+                {% for item in kit %}
+
+                <div class="check-item">
+
+                    <input
+                        type="checkbox"
+                        id="item-{{ loop.index }}"
+                    >
+
+
+                    <label for="item-{{ loop.index }}">
+
+                        <span class="checkbox-design">
+                            ✓
+                        </span>
+
+                        <span>
+                            {{ item }}
+                        </span>
+
+                    </label>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+
+
+            <!-- TIP -->
+            <div class="tip">
+
+                <div class="tip-symbol">
+                    !
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        JUST IN CASE TIP
+                    </strong>
+
+                    <p>
+                        Before leaving, quickly check your
+                        phone, wallet, keys, identification
+                        and chargers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        {% endif %}
+
+
+
+        <!-- =================================================
+             PREVIOUS KITS
+             IMPORTANT: dictionary values are accessed using
+             ["items"] rather than .items
+        ================================================== -->
+
+        {% if history %}
+
+        <section class="history-section">
+
+
+            <div class="history-heading">
+
+                <div>
+
+                    <span class="small-heading">
+                        SAVED HISTORY
+                    </span>
+
+                    <h2>
+                        Previous kits
+                    </h2>
+
+                    <p>
+                        Your latest generated kits are kept
+                        here for quick reference.
+                    </p>
+
+                </div>
+
+
+                <form
+                    method="POST"
+                    action="/clear-history"
+                >
+
+                    <button
+                        type="submit"
+                        class="clear-button"
+                    >
+                        Clear History
+                    </button>
+
+                </form>
+
+            </div>
+
+
+
+            <!-- HISTORY CARDS -->
+            <div class="history-grid">
+
+                {% for saved in history %}
+
+                <article class="history-card">
+
+
+                    <!-- CARD HEADER -->
+                    <div class="history-card-top">
+
+                        <div class="history-category">
+
+                            <span class="history-dot">
+                            </span>
+
+                            <strong>
+                                {{ saved["category"] }}
+                            </strong>
+
+                        </div>
+
+
+                        <span class="history-date">
+                            {{ saved["date"] }}
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- DETAILS -->
+                    <div class="history-details">
+
+                        <span>
+                            {{ saved["duration"] }}
+                        </span>
+
+                        <span>
+                            {{ saved["weather"] }}
+                        </span>
+
+                        <span>
+                            {{ saved["items"]|length }} items
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- SAVED ITEMS -->
+                    <div class="history-items">
+
+                        {% for item in saved["items"][:5] %}
+
+                        <div>
+
+                            <span>
+                                ✓
+                            </span>
+
+                            {{ item }}
+
+                        </div>
+
+                        {% endfor %}
+
+
+                        {% if saved["items"]|length > 5 %}
+
+                        <div class="more-items">
+
+                            +
+                            {{ saved["items"]|length - 5 }}
+                            more items
+
+                        </div>
+
+                        {% endif %}
+
+                    </div>
+
+
+
+                    <!-- TIME -->
+                    <div class="history-time">
+
+                        Generated at
+                        {{ saved["time"] }}
+
+                    </div>
+
+
+                </article>
+
+                {% endfor %}
+
+            </div>
+
+
+        </section>
+
+        {% endif %}
+
+
+
+        <!-- ABOUT -->
+        <section class="about-section">
+
+
+            <div class="about-decoration">
+                ✦
+            </div>
+
+
+            <span class="small-heading">
+                ABOUT THE PROJECT
+            </span>
+
+
+            <h2>
+                Simple idea. Useful result.
+            </h2>
+
+
+            <p>
+                JUST IN CASE is a Python-powered last-minute
+                kit generator that creates practical personalized
+                checklists based on situation, duration, and weather.
+            </p>
+
+
+            <div class="tech-row">
+
+                <span>
+                    PYTHON
+                </span>
+
+                <span>
+                    FLASK
+                </span>
+
+                <span>
+                    HTML
+                </span>
+
+                <span>
+                    CSS
+                </span>
+
+                <span>
+                    NO JAVASCRIPT
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            JUST IN CASE
+            &nbsp;•&nbsp;
+            Smart Kit Generator
+        </p>
+
+
+        <p>
+            Built with Python &amp; Flask
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

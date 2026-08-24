@@ -1,0 +1,38 @@
+[
+    {
+        "date": "24 Aug 2026",
+        "time": "10:21 PM",
+        "category": "Emergency",
+        "duration": "Medium",
+        "weather": "Normal",
+        "items": [
+            "First Aid Kit",
+            "Emergency Contact Information",
+            "Water Bottle",
+            "Power Bank",
+            "Flashlight",
+            "Basic Medicines",
+            "Important Documents",
+            "Extra Clothes",
+            "Toiletries"
+        ]
+    },
+    {
+        "date": "24 Aug 2026",
+        "time": "10:21 PM",
+        "category": "College",
+        "duration": "Short",
+        "weather": "Normal",
+        "items": [
+            "College ID Card",
+            "Notebook",
+            "Pens",
+            "Laptop",
+            "Laptop Charger",
+            "Water Bottle",
+            "College Bag",
+            "Hand Sanitizer",
+            "Small Snack"
+        ]
+    }
+]
