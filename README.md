@@ -11,6 +11,7 @@ A Python mini project that helps users prepare for last-minute situations by org
 - Generate or organize a kit for last-minute preparation.
 - Present essential items in an organized format.
 - Provide a simple, user-friendly interface.
+- previously logged kits in history easily accessible.
 
 *Note: Confirm that each listed feature matches the current implementation.*
 
